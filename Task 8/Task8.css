@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+
+#ball {
+  position: absolute;
+  left: 197px;
+  top: 199px;
+  border-radius:50%;
+  height:15px;
+  width:15px;
+  background-color: black;
+  animation: myOrbit 10s ease-out 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes myOrbit {
+  from { transform: rotate(-90deg) translateX(110px); }
+  to   { transform: rotate(990deg) translateX(110px); }
+}

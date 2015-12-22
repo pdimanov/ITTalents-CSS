@@ -1,0 +1,37 @@
+@CHARSET "UTF-8";
+
+div {
+	margin: 10px auto;
+}
+
+#header {
+	width: 100%;
+	height: 50px;
+	background-color: #336666;
+}
+
+#content {
+	width: 80%;
+	height: 100px;
+	background-color: #008000;
+}
+
+#footer {
+	width: 80%;
+}
+
+#footer div {
+	margin: 0 auto;
+	height: 30px;
+	width: 48%;
+}
+
+#left-footer {
+	background-color: #7F007F;
+	float: left;
+}
+
+#right-footer {
+	background-color: #0000FE;
+	float: right;
+}

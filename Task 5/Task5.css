@@ -1,0 +1,50 @@
+@CHARSET "UTF-8";
+
+#root {
+	width: 50%;
+	margin: auto;
+}
+
+#header {
+	background-color: #4483C7;
+	padding-left: 20px;
+	border-bottom: 2px solid black;
+}
+
+#site-name {
+	color: #FFFFFF;
+	margin: 0px;
+	font-weight: normal;
+}
+
+#content {
+	width: 90%;
+	margin: auto;
+}
+
+article {
+	border: 1px solid #538620;
+	margin: 15px auto;
+}
+
+article > header {
+	background-color: #538620;
+	color: white;
+}
+
+article p {
+	margin: 5px 10px;
+	font-weight: normal;
+	font-size: 0.9em;
+}
+
+article > header > h3 {
+	margin: 0px;
+	padding: 2px 10px;
+	font-weight: normal;
+}
+
+article > footer > p, article > footer  a {
+	color: #BDC1CB;
+	text-decoration: none;
+}

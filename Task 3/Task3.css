@@ -1,0 +1,45 @@
+@CHARSET "UTF-8";
+
+#header, #footer {
+	width: 100%;
+	min-height: 20px;
+}
+
+section {
+	box-sizing: border-box;
+	min-height: 300px;
+}
+
+#left-bar, #right-bar {
+	width: 20%;
+}
+
+#left-bar, #content, #right-bar {
+	min-height: 300px;
+	float: left;
+}
+
+#header {
+	background-color: #000000;
+}
+
+#left-bar {
+	background-color: #800080;
+	margin: 0.5% 1% 0.5% 0%;
+}
+
+#content {
+	background-color: #008000;
+	width: 58%;
+	margin: 0.5% 0%;
+}
+
+#right-bar {
+	background-color: #FF0000;
+	margin: 0.5% 0% 0.5% 1%;
+}
+
+#footer {
+	background-color: #0000FF;
+	clear: both;
+}
