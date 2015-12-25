@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/Task7.css">
+
+	<!-- Google Maps -->
+	<script
+	src="http://maps.googleapis.com/maps/api/js">
+	</script>
+
+	<script>
+	function initialize() {
+		var mapProp = {
+			center:new google.maps.LatLng(42.508742,25.120850),
+			zoom:7,
+			mapTypeId:google.maps.MapTypeId.ROADMAP,
+			scrollwheel: false,
+		};
+		var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+	}
+	google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+	<!-- End of Google Maps -->
+</head>
+</head>
+<body>
+	<div id="root">
+		<div id="header" class="navbar-inverse">
+			<div class="row">
+				<div class="col-md-4 col-sm-12 col-xs-12">
+					<h1><a href="#">MOVIES</a></h1>
+				</div>
+				<div class="col-md-6 col-md-offset-2 col-sm-12 col-xs-12">
+					<nav class="navbar">
+						<div class="container-fluid">
+							<!-- Brand and toggle get grouped for better mobile display -->
+							<div class="navbar-header navbar-left">
+								<button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+									<span class="sr-only">Toggle navigation</span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+									<span class="icon-bar"></span>
+								</button>
+								<span class="pull-left navbar-toggle">HOME</span>
+							</div>
+
+							<!-- Collect the nav links, forms, and other content for toggling -->
+							<div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
+								<ul class="nav navbar-nav" id="navbar">
+									<li><a href="#">HOME</a></li>
+									<li><a href="#">ABOUT</a></li>
+									<li><a href="#">MOST POPULAR</a></li>
+									<li><a href="#">NEWS</a></li>
+									<li><a href="#">CONTACTS</a></li>
+									<li class="hidden-sm hidden-xs"><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div><!-- /.container-fluid -->
+					</nav>
+				</div>
+			</div>
+		</div>
+
+		<div id="subheader">
+			<ul>
+				<li class="text-center"><a href="#">CINEMA MOVIES</a></li>
+				<li class="text-center"><a href="#">TV SERIES</a></li>
+				<li class="text-center"><a href="#">CARTOONS</a></li>
+				<li class="text-center"><a href="#">ANIME</a></li>
+				<li class="text-center"><a href="#">NEW MOVIES</a></li>
+				<li class="text-center"><a href="#">HD MOVIES</a></li>
+			</ul>
+		</div>
+
+		<div id="big-image">
+			<img src="img/big-picture below-header.jpg" alt="" class="img-back">
+			<div id="img-content">
+				<h1>Ex Machina</h1>
+				<p>«To erase the line between man and machine is to obscure the line
+					<br>
+					between men and gods»
+				</p>
+				<div class="row">
+					<div class="col-md-4 col-md-offset-4">
+						<button class="btn col-md-5 col-sm-5
+						col-xs-6">LEARN MORE</button>
+						<button class="btn col-md-5 col-sm-5 col-xs-6 col-md-offset-2 col-sm-offset-2">WATCH TRAILER</button>
+					</div>
+				</div>
+			</div>
+			<div id="big-image-footer">
+				<ul>
+					<li><a href="#"><img src="img/below big picture - pic 1.jpg" alt="" class="img-footer"></a></li>
+					<li><a href="#"><img src="img/below big picture - pic 2.jpg" alt="" class="img-footer"></a></li>
+					<li><a href="#"><img src="img/below big picture - pic 3.jpg" alt="" class="img-footer"></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div id="categories">
+			<h1 class="text-center">Watch your favourite movies online</h1>
+			<p class="text-center">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturientmontes nascetur ridiculus mus. Nulla dui. Fusce feugiat ma lesuada odio. Morbi nunc odio gravida atcursus nec.
+			</p>
+			<ul>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Action</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Adventure</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Animation</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Biography</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Comedy</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Crime</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Documentary</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Drama</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Family</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Fantasy</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Game-show</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>History</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Horror</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Kids</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Music</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Musical</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Mystery</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>News</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Romance</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Sci-Fi</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Short</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Sport</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Thriller</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>War</span>
+					</label>
+				</li>
+				<li>
+					<label class="fancy-checkbox">
+						<input type="checkbox"/>
+						<span>Western</span>
+					</label>
+				</li>
+			</ul>
+			<div class="row">
+				<button class="btn col-md-2 col-sm-2 col-xs-6 col-md-offset-5 col-sm-offset-5 col-xs-offset-3">SEARCH</button>
+			</div>
+		</div>
+
+		<div id="more-movies">
+			<h1 class="text-center" id="first-header">More movies</h1>
+			<div class="row" id="bigger-frames">
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-1.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Cum stoque penat</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-2.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Fibus et magnis</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-3.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Cum sociis</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-4.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Natoque penus et</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-5.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Natoque penat</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-6.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Fibus et magnis</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-7.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Cum stoque penat</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-8.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Natoque penus</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-9.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Cum soci oque</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-10.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Fibus et magnis</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-11.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Sociis natoque</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+				<div class="col-md-3 col-sm-6 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-12.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Cum stoque penat</a></p>
+					<span class="text-center year-footer">2015</span>
+				</div>
+			</div>
+			<div class="row">
+				<button class="col-md-2 col-md-offset-5 col-sm-5 col-sm-offset-5 col-xs-6 col-xs-offset-3 btn">VIEW MORE</button>
+			</div>
+			<hr>
+			<div class="row">
+				<h1 class="col-md-12 col-sm-12 col-xs-12 text-center" id="second-header">Popular</h1>
+			</div>
+			<div class="row" id="smaller-frames">
+				<div class="col-md-2 col-sm-4 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-13.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Oque penat
+					</a></p>
+					<div class="rating text-center">
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-14.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Gena bus et</a></p>
+					<div class="rating text-center">
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-15.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Bus et magni</a></p>
+					<div class="rating text-center">
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-16.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Hus et magn</a></p>
+					<div class="rating text-center">
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-17.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Hus et magn</a></p>
+					<div class="rating text-center">
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+					</div>
+				</div>
+				<div class="col-md-2 col-sm-4 col-xs-12">
+					<div class="frame text-center"><a href="#"><img src="img/img-18.jpg" alt="" class="zoomIn"></a></div>
+					<p class="text-center"><a href="#">Uebus dis</a></p>
+					<div class="rating text-center">
+						<span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="testimonials">
+			<h1 class="text-center">Testimonials</h1>
+			<div id="myCarousel" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<!-- <ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol> -->
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner" role="listbox">
+					<div class="item active">
+						<div class="text-center"><img src="img/img-19.jpg" alt=""></div>
+						<div class="carousel-caption">
+							<h3>James B.</h3>
+							<span>Movie fan</span>
+							<p>“Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum mole
+								stie lacunummy hendrerit mauris. Phsce suscipit varius mi.”
+							</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="text-center"><img src="img/img-20.jpg" alt="Chania"></div>
+						<div class="carousel-caption">
+							<h3>James B.</h3>
+							<span>Movie fan</span>
+							<p>“Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum mole
+								stie lacunummy hendrerit mauris. Phsce suscipit varius mi.”
+							</p>
+						</div>
+					</div>
+
+					<div class="item">
+						<div class="text-center"><img src="img/img-21.jpg" alt="Flower"></div>
+						<div class="carousel-caption">
+							<h3>James B.</h3>
+							<span>Movie fan</span>
+							<p>“Lorem ipsum dolor sit amet consectetuer adipiscing elit. Praesent vestibulum mole
+								stie lacunummy hendrerit mauris. Phsce suscipit varius mi.”
+							</p>
+						</div>
+					</div>
+				</div>
+
+				<!-- Left and right controls -->
+				<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+
+		<div id="contact-us">
+			<h1 class="text-center">Mail us</h1>
+			<div class="row">
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<label for="name">
+						<input type="text" class="form-control" id="name">
+						<span>Your Name</span>
+					</label>
+				</div>
+				<div class="col-md-6 col-sm-12 col-xs-12">
+					<label for="name">
+						<input type="text" class="form-control" id="name">
+						<span>Your Email</span>
+					</label>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12">
+					<label for="name">
+						<input type="text" class="form-control" id="name">
+						<span>Your Message</span>
+					</label>
+				</div>
+			</div>
+			<div class="row">
+				<button class="btn col-md-2 col-sm-2 col-xs-6 col-md-offset-5 col-sm-offset-5 col-xs-offset-3">SEND</button>
+			</div>
+		</div>
+
+		<div id="googleMap">
+		</div>
+
+		<div id="footer">
+			<div class="row">
+				<div class="col-md-3 col-sm-12 col-xs-12 text-center" id="privacy-policy">
+					<span>Movies &copy; 2015 <a href="#" class="">Privacy Policy</a></span>
+				</div>
+				<p class="col-md-6 col-sm-12 col-xs-12 text-center">Questions? Call Us Toll Free:(012) 123-456-7890</p>
+				<div class="col-md-3 col-sm-12 col-xs-12 text-center">
+					<ul>
+						<li><a href="#" class="fa fa-google-plus icon-sm icons"></a></li>
+						<li><a href="#" class="fa fa-pinterest icon-sm icons"></a></li>
+						<li><a href="#" class="fa fa-twitter icon-sm icons"></a></li>
+						<li><a href="#" class="fa fa-facebook icon-sm icons"></a></li>
+						<li><a href="#" class="fa fa-instagram icon-sm icons"></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div id="arrow-up">
+			<button class="btn">
+				<a href="#root"><span class="glyphicon glyphicon-arrow-up"></a></span>
+			</button>
+		</div>
+	</div>
+	
+	
+
+	<script src="libs/jQuery/jquery-2.1.4.js"></script>
+	<script src="libs/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
